@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body {
+    background: rgb(7, 7, 113);
+ 
+   
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: burlywood;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 17px;
+    transition: .5s;
+}
+/*whenever you hover over the tabs in the navbar the cursor changes to a grabbing cursor and the text turns blue.*/
+.navbar a:hover {
+    color: rgb(7, 7, 113);
+    cursor: grab;
+    
+}
+
+.home {
+    background: url(assets/images/background1.JPG);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    
+}
+
+
+/*Tried giving the introduction header some space to create an anticipation for the short intro*/
+.home-content h1 {
+    display: flex;
+    position: absolute;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin-bottom: 800px;
+    margin-left: 400px;
+    
+
+}
+
+.home-content p {
+    display: flex;
+    position: absolute;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 60px
+    
+}
+p {
+    font-size:20px;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 2;
+    color: white;
+}
+
+.code {
+    display: flex;
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: groove;
+    border-color: burlywood;
+    border-radius: 2%;
+    z-index: 8;
+   
+   
+}
+/*Placed images in the center to give it more inviting look*/
+.blackandwhite {
+    display: block;
+   margin-left: 200px;
+   margin-right: auto;
+   width: 1500px;
+   height: 800px;
+}
+
+
+
+.contact  {
+    display: block;
+    box-sizing: border-box;
+    margin-top: 100px;
+    color: white;
+   
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.input-field {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+textarea {
+    width: 40%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: cell;
+    transition: .5s;
+}
+/*When you hover over the submit button it changes to a darker grey*/
+button:hover {
+    transform: skew(10deg);
+    background-color: rgb(45, 44, 44);
+    color:white;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    border: 0px solid burlywood;
+    margin-left: 300px;
+}
+
+/*Added a Groove border to each img to make it look presentable*/
+.gallery img{
+    width: 80%;
+    height: auto;
+    border: groove;
+    position: relative;
+}
+/*Large screens*/
+@media (max-width: 1146px) {
+    .home-content,
+    .home-content p,
+    .home-content h1,
+    .p,
+    .code { 
+    font-size: medium;
+    }
+}
+/*Default pc screens */
+@media (max-width: 1024px) {
+    .home-content,
+    .home-content p,
+    .home-content h1,
+    .p,
+    .code { 
+    font-size: medium;
+    }
+}
+/*Tablet,Ipad size*/
+@media (max-width: 430px) {
+    .home-content,
+    .home-content p,
+    .home-content h1,
+    .p,
+    .code {
+    font-size: small;/*Cell Phone size*/ 
+    }
+}    
+@media (max-width: 375px) {
+    .home-content,
+    .home-content p,
+    .home-content h1,
+    .p,
+    .code {
+    font-size: smaller;
+    }
+}    
+
+/*Having issues with the resizing of the image at the moment*/
